@@ -17,7 +17,7 @@
 // BONUS 1: Crea un container nel DOM e aggiungendo (attravero la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 // BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 
-
+const fizzBuzzWrapper = document.getElementById('fizz-buzz-container');
 
 // per prim cosa scrivo in consolo i numeri da 1 a 100 con il ciclo for
 
@@ -27,6 +27,12 @@ for (let i = 1; i < 101; i = i + 1){
 
      if ((i % 3 == 0) && (i % 5 == 0)){
         console.log('FizzBuzz')
+
+        const fizzBuzzBox = document.createElement('div');
+
+        fizzBuzzBox.classList.add('col-2', 'box');
+
+        fizzBuzzBox.innerHTML = FizzBuzz;
     }
 
      else if(i % 3 == 0){
@@ -40,8 +46,14 @@ for (let i = 1; i < 101; i = i + 1){
     else{
         console.log(i)
     }
-
+    fizzBuzzWrapper.append(fizzBuzzBox);
 }
+
+
+
+
+
+
 
 
 
