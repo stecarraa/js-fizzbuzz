@@ -17,3 +17,30 @@
 // BONUS 1: Crea un container nel DOM e aggiungendo (attravero la funzione append()) un elemento html con il numero o la stringa corretta da mostrare.
 // BONUS 2: Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 
+
+
+// per prim cosa scrivo in consolo i numeri da 1 a 100 con il ciclo for
+
+for (let i = 0; i < 101; i = i + 1){
+    // ora che ho i miei 100 numeri attraverso gli if propongo le varie opzioni
+    
+    if(i % 3 == 0){
+        console.log('Fizz');
+    }
+    else if(i % 5 == 0){
+        console.log('Buzz')
+    }
+
+    else if((i % 3 == 0) && (i % 5 == 0)){
+        console.log('FizzBuzz')
+    }
+    else{
+        console.log(i)
+    }
+
+}
+
+
+
+
+
