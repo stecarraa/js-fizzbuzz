@@ -30,23 +30,52 @@ for (let i = 1; i < 101; i = i + 1){
 
         const fizzBuzzBox = document.createElement('div');
 
-        fizzBuzzBox.classList.add('col-2', 'box');
+        fizzBuzzBox.classList.add('bg-primary','rounded','col', 'box','m-2','text-center');
 
-        fizzBuzzBox.innerHTML = FizzBuzz;
+        fizzBuzzBox.innerHTML = 'FizzBuzz';
+
+        fizzBuzzWrapper.append(fizzBuzzBox);
     }
 
      else if(i % 3 == 0){
         console.log('Fizz');
+
+        const fizzBuzzBox = document.createElement('div');
+
+        fizzBuzzBox.classList.add('bg-secondary','rounded','col', 'box','m-2','text-center');
+
+        fizzBuzzBox.innerHTML = 'Fizz';
+
+        fizzBuzzWrapper.append(fizzBuzzBox);
     }
     else if(i % 5 == 0){
-        console.log('Buzz')
+        console.log('Buzz');
+
+        console.log('Fizz');
+
+        const fizzBuzzBox = document.createElement('div');
+
+        fizzBuzzBox.classList.add('bg-danger','rounded','col', 'box','m-2','text-center');
+
+        fizzBuzzBox.innerHTML = 'Buzz';
+
+        fizzBuzzWrapper.append(fizzBuzzBox);
     }
 
     
     else{
-        console.log(i)
+        console.log(i);
+        console.log('Fizz');
+
+        const fizzBuzzBox = document.createElement('div');
+
+        fizzBuzzBox.classList.add('bg-light','rounded','col', 'box','m-2');
+
+        fizzBuzzBox.innerHTML = i;
+
+        fizzBuzzWrapper.append(fizzBuzzBox);
     }
-    fizzBuzzWrapper.append(fizzBuzzBox);
+    
 }
 
 
